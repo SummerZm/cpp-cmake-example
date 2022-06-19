@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.17)
 project(fetch_content_example)
 include(FetchContent)
+set(FETCHCONTENT_QUIET OFF)
+set(FETCHCONTENT_BASE_DIR "deps/jsoncpp")
 #FetchContent_Declare(jsoncpp
 #        GIT_REPOSITORY https://github.com/open-source-parsers/jsoncpp.git
 #        GIT_TAG 1.9.4)
